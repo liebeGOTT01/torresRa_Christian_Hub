@@ -1,0 +1,1301 @@
+<!Doctype <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Christianity Hub</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="../css/style.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+
+<style>
+    /* colors  */
+
+    .article_bg {
+        background-image: url("../src/images/head..jpg");
+        height: 180px;
+    }
+
+    .left {
+        text-align: center;
+        height: 60%;
+        top: auto;
+        width: 100%;
+        overflow-y: scroll;
+        padding-left: 100px;
+
+    }
+
+
+    .right {
+
+        top: inherit;
+        left: 35px;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+
+    }
+
+    video {
+        max-width: 100%;
+        height: 300px;
+
+    }
+
+    .song_Vid {
+        width: 100%;
+        height: 300px;
+    }
+
+    .suggestedVid {
+        height: 65%;
+        position: relative;
+
+    }
+
+    .lyrics {
+        padding: 10px 0px 10px 50px
+    }
+
+    .f_article {
+        padding: 15px;
+    }
+
+
+    .item-card {
+        border-radius: 5px;
+    }
+
+    .card-title {
+        height: 200px;
+        padding: 5px;
+        border-radius: 5px 5px 0 0;
+        color: #fff;
+        text-align: center;
+    }
+
+
+    .body-text:hover {
+        text-decoration: underline;
+        color: red;
+    }
+
+    .body-text {
+        padding: 5px;
+        font-size: 20px;
+    }
+
+
+
+    .suggested_b {
+        background-image: url("../images/head..jpg")
+    }
+
+    .suggestedPic {
+        width: 100%;
+        height: 100%;
+
+    }
+
+    text-primary:hover{
+        color:blue;
+    }
+
+    h3{
+        font-weight:bold;
+        font-size: 30px;
+    }
+
+</style>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark text-white fixed-top navig">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03"
+            aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon bg-secondary"></span>
+        </button>
+        <div class="collapse navbar-collapse act" id="navbarTogglerDemo03">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0 navig">
+                <li class="nav-item margin">
+                    <a class="nav-link text-white" href="../../public/page.php">ᕼOᗰE
+
+                    </a>
+                </li>
+                <li class="nav-item margin">
+                    <a class="nav-link text-white" href="bible.html">ᗷIᗷᒪE
+                    </a>
+                </li>
+                <li class="nav-item margin">
+                    <a class="nav-link text-white" href="trivia.html">ᗷIᗷᒪE TᖇIᐯIᗩ</a>
+
+                </li>
+                <li class="nav-item active margin">
+                    <a class="nav-link text-white" href="songs.html">SOᑎGS
+                        <span class="sr-only">(current)</span>
+                    </a>
+                </li>
+
+                <li class="nav-item margin">
+                    <a class="nav-link text-white" href="about.html">ᗩᗷOᑌT</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0 navig">
+                <input class="form-control mr-sm-2 input" type="text" name="search" placeholder="Search..">
+                <button class="btn btn-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <br>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <hr class="breaker">
+            </div>
+            <div class="col-auto">
+                <h1 class="txt">𝐒𝐎𝐍𝐆𝐒</h1>
+            </div>
+            <div class="col">
+                <hr class="breaker">
+            </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <div class="row">
+            <div class="col-lg-5 ">
+                <h4 class="txt text-center font-weight-bold">Song List</h4>
+
+                <div class="left text-justify text-primary">
+                    <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                        <a class="nav-link active" id="v-pills-1-tab" data-toggle="pill" href="#v-pills-1" role="tab"
+                            aria-controls="v-pills-1" aria-selected="true">10,000 Reasons (Bless The Lord)</a>
+                        <a class="nav-link" id="v-pills-2-tab" data-toggle="pill" href="#v-pills-2" role="tab"
+                            aria-controls="v-pills-3" aria-selected="false">Are you ready for the call?</a>
+                        <a class="nav-link" id="v-pills-3-tab" data-toggle="pill" href="#v-pills-3" role="tab"
+                            aria-controls="v-pills-2" aria-selected="false">Broken Vessels (Amazing Grace)</a>
+                        <a class="nav-link" id="v-pills-4-tab" data-toggle="pill" href="#v-pills-4" role="tab"
+                            aria-controls="v-pills-4" aria-selected="false">Forgive Me</a>
+                        <a class="nav-link" id="v-pills-5-tab" data-toggle="pill" href="#v-pills-5" role="tab"
+                            aria-controls="v-pills-5" aria-selected="false">Holy Spirit You are Welcome Here</a>
+                        <a class="nav-link" id="v-pills-6-tab" data-toggle="pill" href="#v-pills-6" role="tab"
+                            aria-controls="v-pills-6" aria-selected="false">I Have Been Blessed</a>
+                        <a class="nav-link" id="v-pills-7-tab" data-toggle="pill" href="#v-pills-7" role="tab"
+                            aria-controls="v-pills-7" aria-selected="false">If Your Presence Go Not With Me</a>
+                        <a class="nav-link" id="v-pills-8-tab" data-toggle="pill" href="#v-pills-8" role="tab"
+                            aria-controls="v-pills-8" aria-selected="false">In Christ Alone</a>
+                        <a class="nav-link" id="v-pills-9-tab" data-toggle="pill" href="#v-pills-9" role="tab"
+                            aria-controls="v-pills-9" aria-selected="false">It is Well With My Soul</a>
+                        <a class="nav-link" id="v-pills-10-tab" data-toggle="pill" href="#v-pills-10" role="tab"
+                            aria-controls="v-pills-10" aria-selected="false">Made By Mercy, Saved By Grace</a>
+                        <a class="nav-link" id="v-pills-11-tab" data-toggle="pill" href="#v-pills-11" role="tab"
+                            aria-controls="v-pills-11" aria-selected="false">My Redeemer is Faithful and True</a>
+                        <a class="nav-link" id="v-pills-12-tab" data-toggle="pill" href="#v-pills-12" role="tab"
+                            aria-controls="v-pills-12" aria-selected="false">My Soul Desire</a>
+                        <a class="nav-link" id="v-pills-13-tab" data-toggle="pill" href="#v-pills-13" role="tab"
+                            aria-controls="v-pills-13" aria-selected="false">Perfect Peace</a>
+                        <a class="nav-link" id="v-pills-14-tab" data-toggle="pill" href="#v-pills-14" role="tab"
+                            aria-controls="v-pills-14" aria-selected="false">Sinner Saved By Grace</a>
+                        <a class="nav-link" id="v-pills-15-tab" data-toggle="pill" href="#v-pills-15" role="tab"
+                            aria-controls="v-pills-15" aria-selected="false">Tears are a Language God Understands</a>
+                        <a class="nav-link" id="v-pills-16-tab" data-toggle="pill" href="#v-pills-16" role="tab"
+                            aria-controls="v-pills-16" aria-selected="false">'Tis So Sweet to Trust in Jesus</a>
+                        <a class="nav-link" id="v-pills-17-tab" data-toggle="pill" href="#v-pills-17" role="tab"
+                            aria-controls="v-pills-17" aria-selected="false">To Rescue a Sinner Like Me</a>
+                        <a class="nav-link" id="v-pills-18-tab" data-toggle="pill" href="#v-pills-18" role="tab"
+                            aria-controls="v-pills-18" aria-selected="false">Trust His Heart</a>
+                        <a class="nav-link" id="v-pills-19-tab" data-toggle="pill" href="#v-pills-19" role="tab"
+                            aria-controls="v-pills-19" aria-selected="false">When The World Looks at Me</a>
+                        <a class="nav-link" id="v-pills-20-tab" data-toggle="pill" href="#v-pills-20" role="tab"
+                            aria-controls="v-pills-20" aria-selected="false">Why Have You Choosen Me</a>
+                        <a class="nav-link" id="v-pills-21-tab" data-toggle="pill" href="#v-pills-21" role="tab"
+                            aria-controls="v-pills-21" aria-selected="false">Will You Love Jesus More?</a>
+                        <!--
+                        <a class="nav-link" id="v-pills-22-tab" data-toggle="pill" href="#v-pills-22" role="tab"
+                            aria-controls="v-pills-22" aria-selected="false">Settings</a>
+                        <a class="nav-link" id="v-pills-23-tab" data-toggle="pill" href="#v-pills-23" role="tab"
+                            aria-controls="v-pills-23" aria-selected="false">Profile</a>
+                        <a class="nav-link" id="v-pills-24-tab" data-toggle="pill" href="#v-pills-24" role="tab"
+                            aria-controls="v-pills-24" aria-selected="false">Messages</a>
+                        <a class="nav-link" id="v-pills-25-tab" data-toggle="pill" href="#v-pills-25" role="tab"
+                            aria-controls="v-pills-25" aria-selected="false">Messages</a> -->
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-7 border-left">
+                <div class="tab-content" id="v-pills-tabContent">
+                    <div class="tab-pane fade show active" id="v-pills-1" role="tabpanel" aria-labelledby="v-pills-1-tab">
+
+
+                        <video controls autoplay>
+                            <source class="song_Vid" src="../videos/10,000 Reasons.webm" type="video/mp4">
+                        </video>
+                        <br>
+                        <h3>10,000 Reasons (Bless The Lord)</h3>
+                        <h6>Matt Redman</h6>
+
+                        <br>
+                        <br>
+                        <p class="text-justify lyrics font-weight-bold">Chorus<br>
+                            <br>
+                            Bless the Lord, oh my soul<br>
+                            Oh my soul<br>
+                            Worship His holy name<br>
+                            Sing like never before<br>
+                            Oh my soul<br>
+                            Worship His holy name<br>
+                            <br>
+                            The sun comes up, it’s a new day dawning<br>
+                            It’s time to sing Your song again<br>
+                            Whatever may pass, and whatever lies before me<br>
+                            Let me be singing when the evening comes<br>
+                            <br>
+                            Repeat Chorus<br>
+                            <br>
+                            You’re rich in love, and You’re slow to anger<br>
+                            Your name is great, and Your heart is kind<br>
+                            For all Your goodness I will keep on singing<br>
+                            Ten thousand reasons for my heart to find<br><br>
+                            Repeat Chorus<br>
+                            <br><br>
+                            And on that day when my strength is failing<br>
+                            The end draws near and my time has come<br>
+                            Still my soul will sing Your praise unending<br>
+                            Ten thousand years and then forevermore<br>
+                            <br>
+                            Repeat Chorus 2x<br>
+                            <br>
+                            Worship His holy name<br>
+                            Worship Your holy name<br>
+                        </p>
+
+                        <br>
+                    </div>
+                    <div class="tab-pane fade" id="v-pills-2" role="tabpanel" aria-labelledby="v-pills-2-tab">
+                        <video controls autoplay>
+                            <source class="song_Vid" src="../videos/Broken Vessels.webm" type="video/mp4">
+                        </video>
+                        <br>
+                        <h3>Are You Ready for the Call?</h3>
+                        <h6>Hillsong</h6>
+
+                        <br>
+                        <br>
+                        <p class="text-justify lyrics font-weight-bold">
+                            The hour is approaching when the souls of man will hear.<br>
+                            A mighty shout resounding in the sky.<br>
+                            In power and great glory King Jesus will appear, <br>
+                            and take His children home to paradise.<br>
+                            It will be a celebration, for the ones who chose His name, <br>
+                            but total separation, for the
+                            ones who turned away.<br><br>
+                            Are you ready for the trumpet?<br>
+                            Are you ready for the call?<br>
+                            Soon the angels will assemble to usher in the Son of God.<br>
+                            Will come and find you faithful?<br>
+                            Will He know your name at all?<br>
+                            Every moment brings us closer.<br>
+                            Are you ready for the call?<br><br>
+                            The Bible speaks of two men, who were standing in the field.
+                            Where one is taken and one is left behind.
+                            Two women in the kitchen one goes and one remains.
+                            So get your house in order while there's time.
+                            In the cross there is salvation, through the blood there is a way, to secure your
+                            destination on that resurrection day.
+                            Are you ready for the trumpet?
+                            Are you ready for the call?
+                            Soon the angels will assemble to usher in the Son of God.
+                            Will He come and find you faithful?
+                            Will He know your name at all?
+                            Every moment brings us closer.
+                            Are you ready for the call?
+                            There's an ergancy to reach the world.
+                            We have no time to waist.
+                            For within the heart of mortal man the burning question now is raised.
+                            Are you ready for the trumpet?
+                            Are you ready for the call?
+                            Soon the angels will assemble to usher in the Son of God.
+                            Will He come and find you faithful?
+                            Will He know your name at all?
+                            Every moment brings us closer.
+                            Are you ready for the call?
+                            Will He come and find you faithful?
+                            Will He know your name at all?
+                            Every moment brings us closer.
+                            Are you ready for the call?
+                            For the call?
+                        </p>
+                    </div>
+                    <div class="tab-pane fade" id="v-pills-3" role="tabpanel" aria-labelledby="v-pills-3-tab">
+                        <video controls autoplay>
+                            <source class="song_Vid" src="../videos/Broken Vessels.webm" type="video/mp4">
+                        </video>
+                        <br>
+                        <h3>Broken Vessels (Amazing Grace)</h3>
+                        <h6>Hillsong</h6>
+                        <br>
+                        <p class="text-justify lyrics font-weight-bold">
+                            I. All these pieces<br>
+                            Broken and scattered<br>
+                            In mercy gathered<br>
+                            Mended and whole<br>
+                            Empty-handed<br>
+                            But not forsaken<br>
+                            I've been set free<br>
+                            I've been set free<br>
+                            <br>
+                            Chorus
+                            <br>
+                            <br>
+                            Amazing grace<br>
+                            How sweet the sound<br>
+                            That saved a wretch like me, oh<br>
+                            I once was lost<br>
+                            But now I'm found<br>
+                            Was blind but now I see<br>
+                            <br>
+                            Bridge
+                            <br>
+
+
+                            Oh, I can see it now<br>
+                            Oh, I can see the love in Your eyes<br>
+                            Laying yourself down<br>
+                            Raising up the broken to life<br>
+
+                            II. You take our failure<br>
+                            You take our weakness<br>
+                            You set Your treasure<br>
+                            In jars of clay<br>
+                            So take this heart, Lord<br>
+                            I'll be Your vessel<br>
+                            The world to see<br>
+                            Your life in me, oh<br>
+                            <br>
+                            Chorus and bridge(2x)
+                            <br>
+                            Bridge (3x)<br>
+                        </p>
+                    </div>
+                    <div class="tab-pane fade" id="v-pills-4" role="tabpanel" aria-labelledby="v-pills-4-tab">
+                        <video controls autoplay>
+                            <source class="song_Vid" src="../videos/Broken Vessels.webm" type="video/mp4">
+                        </video>
+                        <br>
+                        <h3>Forgive Me</h3>
+                        <h6>Rebecca St. James</h6>
+
+                        <br>
+                        <br>
+                        <p class="text-justify lyrics font-weight-bold">
+                            For all the times I've failed You, Lord <br>
+                            Forgive me <br>
+                            For all the ways I've fallen short <br>
+                            Lord, forgive me now <br>
+                            God, I'm so in need of grace <br>
+                            I fall upon my face <br>
+                            Forgive me <br><br>
+                            You see the tears fall down my face <br>
+                            Forgive me <br>
+                            Take my fear, Lord, take my shame <br>
+                            Lord, forgive me now <br>
+                            Purify me, make me new <br>
+                            Like only You can do <br>
+                            Forgive me now <br><br>
+                            Lord, we come to honor You <br>
+                            We are forgiven <br>
+                            We bring our love and thanks to You <br>
+                            We are forgiven now <br><br>
+                            God we praise You for Your grace <br>
+                            Before You we are raised <br>
+                            Forgiven <br><br>
+                            God we praise You for Your grace <br>
+                            Before You we are raised <br>
+                            Forgiven <br>
+                            Forgiven <br>
+                        </p>
+                    </div>
+                    <div class="tab-pane fade" id="v-pills-5" role="tabpanel" aria-labelledby="v-pills-5-tab">
+
+                        <video controls autoplay>
+                            <source class="song_Vid" src="../videos/Broken Vessels.webm" type="video/mp4">
+                        </video>
+                        <br>
+                        <h3>Holy Spirit You Are Welcome Here</h3>
+                        <h6>Jesus Culture</h6>
+
+                        <br>
+                        <br>
+                        <p class="text-justify lyrics font-weight-bold">
+                            There's nothing worth more, that will ever come close <br>
+                            nothing can compare, You're our living hope <br>
+                            Your Presence Lord <br>
+                            I've tasted and seen, of the sweetest of Loves <br>
+                            Where my heart becomes free, and my shame is undone<br>
+                            In Your Presence Lord<br><br>
+                            Holy Spirit You are welcome here<br>
+                            Come flood this place and fill the atmosphere<br>
+                            Your Glory God is what our hearts long for<br>
+                            To be overcome by Your Presence Lord<br><br>
+                            Let us become more aware of Your Presence<br>
+                            here's nothing worth more, that will ever come close<br>
+                            nothing can compare, You're our living hope<br>
+                            Your Presence Lord<br>
+                            I've tasted and seen, of the sweetest of Loves<br>
+                            Where my heart becomes free, and my shame is undone<br>
+                            In Your Presence Lord<br><br>
+                            Holy Spirit You are welcome here<br>
+                            Come flood this place and fill the atmosphere<br>
+                            Your Glory God is what our hearts long for<br>
+                            To be overcome by Your Presence Lord<br>
+                            Let us become more aware of Your Presence<br>
+                            Let us experience the Glory of Your Goodness<br>
+                        </p>
+                    </div>
+                    <div class="tab-pane fade" id="v-pills-6" role="tabpanel" aria-labelledby="v-pills-6-tab">
+                        <video controls autoplay>
+                            <source class="song_Vid" src="../videos/Broken Vessels.webm" type="video/mp4">
+                        </video>
+                        <br>
+                        <h3>I Have Been Blessed</h3>
+                        <h6> Champion Baptist College</h6>
+
+                        <br>
+                        <br>
+                        <p class="text-justify lyrics font-weight-bold">
+                            I. When He moves among us all that He does<br>
+                            all of His mercy and all of His love<br>
+                            and the pen of the writer could write everyday<br>
+                            even this world could never contain<br>
+                            how I've been blessed<br><br>
+                            The warmth in winter the flowers in spring<br>
+                            the laughter in summer and the changing of leaves<br>
+                            the food on my table a good place to sleep<br>
+                            clothes on my back and shoes on my feet<br>
+                            I have been blessed<br><br>
+                            CHORUS
+                            <BR>
+                            <BR>
+                            I have been blessed God's so good to me<br>
+                            precious are His thoughts of you and me<br>
+                            no way I could count them there's not enough time<br>
+                            so I'll just thank Him for being so kind<br>
+                            God has been good so good<br>
+                            I have been blessed<br><br>
+
+                            II. Arms that will raise a voice that can talk<br>
+                            hands that can touch and legs that can walk<br>
+                            ears that can listen eyes that can see<br>
+                            oh I've got to praise Him as long as I breathe<br>
+                            I have been blessed<br><br>
+                            A father and mother who nurtured and raised<br>
+                            a brother and sister memories made<br>
+                            our pastor to lead us the altar to pray<br>
+                            stripes that can heal the blood that can save<br>
+                            I have been blessed<br><br>
+                            REPEAT CHORUS
+                            <br>
+                            <br>
+                            III. We live in a country the greatest on earth<br>
+                            our flag stands for freedom and what it is worth<br>
+                            she stands in the harbor Miss Liberty calls<br>
+                            all have gave some but some have gave all<br>
+                            for me to be blessed<br><br>
+                            He's my shoulder to lean on when I am down<br>
+                            the rock where He leads me when I'm overwhelmed<br>
+                            the place where He hides me under His wings<br>
+                            He's not just a song He's the reason I sing<br>
+                            I have been blessed<br>
+                            <br>
+                            REPEAT CHORUS
+                        </p>
+                    </div>
+                    <div class="tab-pane fade" id="v-pills-7" role="tabpanel" aria-labelledby="v-pills-7-tab">
+                        <video controls autoplay>
+                            <source class="song_Vid" src="../videos/Broken Vessels.webm" type="video/mp4">
+                        </video>
+                        <br>
+                        <h3>If Your Presence Go Not With Me</h3>
+                        <h6>Jesus Culture</h6>
+                        <br>
+                        <p class="text-justify lyrics font-weight-bold">
+                            There's nothing worth more, that will ever come close nothing can compare, You're
+                            our living hope
+                            Your Presence Lord
+                            I've tasted and seen, of the sweetest of Loves
+                            Where my heart becomes free, and my shame is undone
+                            In Your Presence Lord
+                            Holy Spirit You are welcome here
+                            Come flood this place and fill the atmosphere
+                            Your Glory God is what our hearts long for
+                            To be overcome by Your Presence Lord
+                            Let us become more aware of Your Presence
+                            here's nothing worth more, that will ever come close nothing can compare, You're
+                            our living hope
+                            Your Presence Lord
+                            I've tasted and seen, of the sweetest of Loves
+                            Where my heart becomes free, and my shame is undone
+                            In Your Presence Lord
+                            Holy Spirit You are welcome here
+                            Come flood this place and fill the atmosphere
+                            Your Glory God is what our hearts long for
+                            To be overcome by Your Presence Lord
+                            Let us become more aware of Your Presence
+                            Let us experience the Glory of Your Goodness
+                        </p>
+                    </div>
+                    <div class="tab-pane fade" id="v-pills-8" role="tabpanel" aria-labelledby="v-pills-8-tab">
+                        <video controls autoplay>
+                            <source class="song_Vid" src="../videos/Broken Vessels.webm" type="video/mp4">
+                        </video>
+                        <br>
+                        <h3>In Christ Alone</h3>
+                        <h6>Jesus Culture</h6>
+                        <br>
+                        <p class="text-justify lyrics font-weight-bold">
+                            In Christ alone my hope is found,<br>
+                            He is my light, my strength, my song<br>
+                            This Cornerstone, this solid Ground<br>
+                            Firm through the fiercest drought and storm.<br>
+                            What heights of love, what depths of peace<br>
+                            When fears are stilled, when strivings cease<br><br>
+                            My Comforter, my All in All<br>
+                            Here in the love of Christ I stand.<br>
+                            In Christ alone! - who took on flesh,<br>
+                            Fullness of God in helpless babe.<br><br>
+                            This gift of love and righteousness,<br>
+                            Scorned by the ones He came to save<br>
+                            Till on that cross as Jesus died,<br>
+                            The wrath of God was satisfied<br>
+                            For every sin on Him was laid<br>
+                            Here in the death of Christ I live.<br><br>
+                            There in the ground His body lay,<br>
+                            Light of the world by darkness slain:<br>
+                            Then bursting forth in glorious day<br>
+                            Up from the grave He rose again<br><br>
+                            And as He stands in victory<br>
+                            Sin's curse has lost its grip on me,<br>
+                            For I am His and He is mine<br>
+                            Bought with the precious blood of Christ<br><br>
+                            No guilt in life, no fear in death,<br>
+                            This is the power of Christ in me<br>
+                            From life's first cry to final breath,<br>
+                            Jesus commands my destiny<br><br>
+                            No power of hell, no scheme of man,<br>
+                            Can ever pluck me from His hand<br>
+                            Till He returns or calls me home<br>
+                            Here in the power of Christ I'll stand.<br>
+                        </p>
+                    </div>
+                    <div class="tab-pane fade" id="v-pills-9" role="tabpanel" aria-labelledby="v-pills-9-tab">
+                        <video controls autoplay>
+                            <source class="song_Vid" src="../videos/Broken Vessels.webm" type="video/mp4">
+                        </video>
+                        <br>
+                        <h3>It is well with my Soul</h3>
+                        <h6>Don Moen</h6>
+
+                        <br>
+                        <br>
+                        <p class="text-justify lyrics font-weight-bold">
+                            When peace, like a river, attendeth my way,<br>
+                            When sorrows like sea billows roll;<br>
+                            Whatever my lot, Thou has taught me to say,<br>
+                            It is well, it is well, with my soul.<br>
+                            It is well, it is well,<br>
+                            With my soul, with my soul,<br>
+                            It is well, it is well, with my soul.<br><br>
+                            Though Satan should buffet, though trials should come,<br>
+                            Let this blest assurance control,<br>
+                            That Christ has regarded my helpless estate,<br>
+                            And hath shed His own blo<br>od for my soul.<br>
+                            It is well, It is well,
+                            with my soul, with my soul<br>
+                            It is well, it is well, with my soul.<br><br>
+                            My sin, oh, the bliss of this glorious thought!<br>
+                            My sin, not in part but the whole,<br>
+                            It was nailed trough his cross, and I bear it no more,<br>
+                            Bless the Lord, bless the Lord, O my soul!<br>
+                            It is well, It is well<br>
+                            with my soul, with my soul<br>
+                            It is well, it is well, with my soul<br>
+                        </p>
+                    </div>
+                    <div class="tab-pane fade" id="v-pills-10" role="tabpanel" aria-labelledby="v-pills-10-tab">
+                        <video controls autoplay>
+                            <source class="song_Vid" src="../videos/Broken Vessels.webm" type="video/mp4">
+                        </video>
+                        <br>
+                        <h3>Made By Mercy, Saved by Grace</h3>
+                        <h6>The Ruppes</h6>
+                        <br>
+                        <p class="text-justify lyrics font-weight-bold">
+                            Just a few broken pieces to work with<br>
+                            A handful of fragments of me<br>
+                            But Jesus picked them all up, with a sweet hand of love<br>
+                            His vision was what I could be<br>
+                            He took what the world saw as worthless<br>
+                            And created a masterpiece<br><br>
+                            Made by mercy<br>
+                            Shaped in love<br>
+                            Formed by the father's hand<br>
+                            Praise from God above<br>
+                            Nothing that I have done<br>
+                            No offer was enough for what you see today was made by mercy<br>
+                            Saved by grace<br>
+                        </p>
+                    </div>
+                    <div class="tab-pane fade" id="v-pills-11" role="tabpanel" aria-labelledby="v-pills-11-tab">
+                        <video controls autoplay>
+                            <source class="song_Vid" src="../videos/Broken Vessels.webm" type="video/mp4">
+                        </video>
+                        <br>
+                        <h3>My Redeemer Is Faithful and True</h3>
+                        <h6> Steven Curtis Chapman</h6>
+
+                        <br>
+                        <br>
+                        <p class="text-justify lyrics font-weight-bold">
+                            As I look back on the road I've travelled,<br>
+                            I see so many times He carried me through;<br>
+                            And if there's one thing that I've learned in my life,<br>
+                            My Redeemer is faithful and true.<br>
+                            My Redeemer is faithful and true.<br><br>
+                            My Redeemer is faithful and true.<br>
+                            Everything He has said He will do,<br>
+                            And every morning His mercies are new.<br>
+                            My Redeemer is faithful and true.<br><br>
+                            My heart rejoices when I read the promise<br>
+                            'There is a place I am preparing for you.'<br>
+                            I know someday I'll see my Lord face to face,<br>
+                            'Cause my Redeemer is faithful and true.<br>
+                            My Redeemer is faithful and true.<br><br>
+                            And in every situation He has proved His love to me;<br>
+                            When I lack the understanding, He gives more grace to me.<br><br>
+                            My Redeemer is faithful and true.<br>
+                            Everything He has said He will do,<br>
+                            And every morning His mercies are new.<br>
+                            My Redeemer is faithful and true.<br>
+                        </p>
+                    </div>
+                    <div class="tab-pane fade" id="v-pills-12" role="tabpanel" aria-labelledby="v-pills-12-tab">
+                        <video controls autoplay>
+                            <source class="song_Vid" src="../videos/Broken Vessels.webm" type="video/mp4">
+                        </video>
+                        <br>
+                        <h3>My Soul Desire</h3>
+                        <h6> Denice Williams</h6>
+
+                        <br>
+                        <br>
+                        <p class="text-justify lyrics font-weight-bold">
+                            Lord, when you placed your hands upon me<br>
+                            I knew that I would never be the same<br>
+                            For in that moment I became your servant<br>
+                            And since that day, I only have one aim<br><br>
+                            My soul desire is to be used<br>
+                            And empty vessel longing to be filled by You<br>
+                            My soul desire is to serve You Lord<br>
+                            To do your perfect will<br>
+                            To work each day and build<br>
+                            You Kingdom, this is my soul desire.<br><br>
+                            Lord, I do not seek to claim the glory<br>
+                            I only wish to be under your control<br>
+                            For I know that you alone are worthy<br>
+                            And it's You who placed this longing in my soul<br><br>
+                            My soul desire is to be used<br>
+                            And empty vessel longing to be filled by You<br>
+                            My soul desire is to serve You Lord<br>
+                            To do your perfect will<br>
+                            To work each day and build<br>
+                            You Kingdom, this is my soul desire.<br><br>
+                        </p>
+                    </div>
+                    <div class="tab-pane fade" id="v-pills-13" role="tabpanel" aria-labelledby="v-pills-13-tab">
+                        <video controls autoplay>
+                            <source class="song_Vid" src="../videos/Broken Vessels.webm" type="video/mp4">
+                        </video>
+                        <br>
+                        <h3>Perfect Peace</h3>
+                        <h6>Laura Story</h6>
+
+                        <br>
+                        <br>
+                        <p class="text-justify lyrics font-weight-bold">
+                            Stay close by my side<br>
+                            Keep your eyes on me<br>
+                            Though this life is hard<br>
+                            I will give you perfect peace<br>
+                            In this time of trial<br>
+                            Pain that no one sees<br><br>
+                            Trust me when I say
+                            I will give you perfect peace<br>
+                            And you'll never walk alone<br>
+                            And you'll never be in need<br>
+                            Though I may not calm the storms around you<br><br>
+                            You can hide in me<br>
+                            Burdens that you bear<br>
+                            Offer no relief<br>
+                            Let me bear your load<br>
+                            'Cause I will give you perfect peace<br><br>
+                            Stay close by my side<br>
+                            And you'll never walk alone<br>
+                            Keep your eyes on me<br>
+                            And you'll never be in need<br>
+                            Though this life is hard<br>
+                            Know that I will always give you perfect peace<br>
+                            I will give you perfect peace<br>
+                        </p>
+                    </div>
+                    <div class="tab-pane fade" id="v-pills-14" role="tabpanel" aria-labelledby="v-pills-14-tab">
+                        <video controls autoplay>
+                            <source class="song_Vid" src="../videos/Broken Vessels.webm" type="video/mp4">
+                        </video>
+                        <br>
+                        <h3>Sinner Saved by Grace</h3>
+                        <h6>Gaither Vocal Band</h6>
+                        <br>
+                        <p class="text-justify lyrics font-weight-bold">
+                            If you could see what I once was<br>
+                            If you could go with me<br>
+                            Back to where I started from<br>
+                            Then I know you would see<br>
+                            A miracle of love that took me<br>
+                            In it's sweet embrace<br>
+                            And made me what I am today<br>
+                            Just an old sinner saved by grace<br><br>
+                            CHORUS<br><br>
+                            I'm just a sinner saved by grace<br>
+                            When I stood condemned to death<br>
+                            He took my place<br>
+                            Now I live and breathe in freedom<br>
+                            With each breath of life I take<br>
+                            Loved and forgiven, backed with a living<br>
+                            I'm just a sinner saved by grace<br><br>
+                            How could I boast on anything<br>
+                            I've ever seen or done?<br>
+                            How could I dare to claim as mine<br>
+                            The victories God has won?<br>
+                            Where would I be<br>
+                            Had God not brought me<br>
+                            Gently to this place?<br>
+                            I'm here to say I'm nothing<br>
+                            But a sinner saved by grace<br><br>
+                            REPEAT CHORUS<br><br>
+
+                            Now I grow and breathe in freedom<br>
+                            With each breath of life I take<br>
+                            I'm loved and forgiven backed with a living<br>
+                            I'm just a sinner saved by grace<br>
+                            Saved by grace<br>
+                        </p>
+                    </div>
+                    <div class="tab-pane fade" id="v-pills-15" role="tabpanel" aria-labelledby="v-pills-15-tab">
+                        <video controls autoplay>
+                            <source class="song_Vid" src="../videos/Broken Vessels.webm" type="video/mp4">
+                        </video>
+                        <br>
+                        <h3>Tears are Language God Understands</h3>
+                        <h6>Gaither Vocal Band</h6>
+
+                        <br>
+                        <br>
+                        <p class="text-justify lyrics font-weight-bold">
+                            Often you wonder why tears come into your eyes<br>
+                            And burdens seem to be much more than you can bear<br>
+                            But God is standing near, He sees your falling tears<br><br>
+                            And tears are a language God understands.<br>
+                            God sees the tears of a brokenhearted soul<br>
+                            He sees your tears and hears them when they fall<br>
+                            God weeps along with man and He takes him by the hand<br>
+                            Tears are a language God understands.<br><br>
+                            When grief has left you low it causes tears to flow<br>
+                            When things have not turned out the way that you had planned<br>
+                            But God won't forget you His promises are true<br><br>
+                            And tears are a language God understands.<br>
+                            God sees the tears of a brokenhearted soul<br>
+                            He sees your tears and hears them when they fall<br>
+                            God weeps along with man and He takes him by the hand<br>
+                            Tears are a language that my God He understands.<br>
+                            God weeps along with man and He takes him by the hand<br>
+                            Tears are a language God understands.<br>
+                        </p>
+                    </div>
+                    <div class="tab-pane fade" id="v-pills-16" role="tabpanel" aria-labelledby="v-pills-16-tab">
+                        <video controls autoplay>
+                            <source class="song_Vid" src="../videos/Broken Vessels.webm" type="video/mp4">
+                        </video>
+                        <br>
+                        <h3>'Tis So Sweet to Trust in Jesus</h3>
+                        <h6>Casting Crowns</h6>
+
+                        <br>
+                        <br>
+                        <p class="text-justify lyrics font-weight-bold">
+                            'Tis so sweet to trust in Jesus,<br>
+                            Just to take Him at His Word<br>
+                            Just to rest upon His promise,<br>
+                            Just to know, "Thus saith the Lord!"<br><br>
+                            Jesus, Jesus, how I trust Him!<br>
+                            How I've proved Him o'er and o'er<br>
+                            Jesus, Jesus, precious Jesus!<br>
+                            Oh, for grace to trust Him more!<br><br>
+                            I'm so glad I learned to trust Him,<br>
+                            Precious Jesus, Savior, Friend<br>
+                            And I know that He is with me,<br>
+                            Will be with me to the end.<br><br>
+                            Oh, how sweet to trust in Jesus,<br>
+                            Just to trust His cleansing blood<br>
+                            And in simple faith to plunge me<br>
+                            'Neath the healing, cleansing flood!<br><br>
+                            Yes, 'tis sweet to trust in Jesus,<br>
+                            Just from sin and self to cease<br>
+                            Just from Jesus simply taking<br>
+                            Life and rest, and joy and peace.<br>
+                        </p>
+                    </div>
+                    <div class="tab-pane fade" id="v-pills-17" role="tabpanel" aria-labelledby="v-pills-17-tab">
+                        <video controls autoplay>
+                            <source class="song_Vid" src="../videos/Broken Vessels.webm" type="video/mp4">
+                        </video>
+                        <br>
+                        <h3>To Rescue a Sinner Like Me</h3>
+                        <h6>Rich Abante Moats</h6>
+                        <br>
+                        <p class="text-justify lyrics font-weight-bold">
+                            I don't understand how a God so divine<br>
+                            Could lower Himself to a life such as mine<br>
+                            And consider me worth every minute of time<br>
+                            To rescue a sinner like me<br><br>
+                            When I think of my savior alone on the cross<br>
+                            I know without him<br>
+                            That my life would be lost<br>
+                            If he had not been willing to suffer the cost<br>
+                            To rescue a sinner like me<br><br>
+                            To rescue a sinner like me, Lord<br>
+                            To rescue a sinner like me<br>
+                            He abandoned his throne and his kingdom above<br>
+                            To rescue a sinner like me<br><br>
+                            My mind is so limited that I cannot see<br>
+                            The reason he died and arose just for me<br>
+                            So unworthy was I, yet he gave willingly<br>
+                            To rescue a sinner like me<br><br>
+                            To rescue a sinner as worthless as I<br>
+                            Yet he gave me a reason to sing<br>
+                            It's so hard to believe but it happened to me<br>
+                            Hallelujah to Jesus my king<br>
+                            My king<br><br>
+                            To rescue a sinner like me, Lord<br>
+                            To rescue a sinner like me<br>
+                            He abandoned his throne and his kingdom above<br>
+                            To rescue a sinner like me<br>
+                            He abandoned his throne and his kingdom above<br>
+                            To rescue a sinner like me<br><br>
+                            a sinner like me<br>
+                            a sinner like me<br>
+                        </p>
+                    </div>
+                    <div class="tab-pane fade" id="v-pills-18" role="tabpanel" aria-labelledby="v-pills-18-tab">
+                        <video controls autoplay>
+                            <source class="song_Vid" src="../videos/Broken Vessels.webm" type="video/mp4">
+                        </video>
+                        <br>
+                        <h3>Trust His Heart</h3>
+                        <h6>Babbie Mason</h6>
+                        <br>
+                        <p class="text-justify lyrics font-weight-bold">
+                            I. All things work for our good<br>
+                            Though sometimes we don't see<br>
+                            How they could<br>
+                            Struggles that break our hearts in two<br>
+                            Sometimes blind us to the truth<br><br>
+                            Our Father knows what's best for us<br>
+                            His ways are not our own<br>
+                            So when your pathway grows dim<br>
+                            And you just don't see Him,<br>
+                            Remember you're never alone<br>
+                            <br>
+                            CHORUS<br><br>
+                            God is too wise to be mistaken<br>
+                            God is too good to be unkind<br>
+                            So when you don't understand<br>
+                            When don't see His plan<br>
+                            When you can't trace His hand<br>
+                            Trust His Heart<br>
+                            Trust His Heart<br><br>
+                            II. He sees the master plan<br>
+                            And he holds our future in His hand,<br>
+                            So don't live as those who have no hope,<br>
+                            All our hope is found in Him<br>
+                            We see the present clearly<br>
+                            But He sees the first and the last<br>
+                            And like a tapestry He's weaving you and me,<br>
+                            To someday be just like Him<br><br>
+                            REPEAT CHORUS<br><br>
+                            BRIDGE<br><br>
+                            He alone is faithful and true<br>
+                            He alone knows what is best for you<br><br>
+                            REPEAT CHORUS<br><br>
+                            When you don't understand<br>
+                            When you don't see His plan<br>
+                            When you can't trace His hand<br>
+                            Trust His Heart<br><br>
+                            Trust His Heart<br>
+                        </p>
+                    </div>
+                    <div class="tab-pane fade" id="v-pills-19" role="tabpanel" aria-labelledby="v-pills-19-tab">
+                        <video controls autoplay>
+                            <source class="song_Vid" src="../videos/Broken Vessels.webm" type="video/mp4">
+                        </video>
+                        <br>
+                        <h3>When the World Looks at Me</h3>
+                        <h6>Legacy Five</h6>
+                        <br>
+                        <p class="text-justify lyrics font-weight-bold">
+                            I want my life to be a light for those around me<br>
+                            I want my life to be that roadmap that says "Hope"<br>
+                            I want my life to be a beacon on life's raging sea<br>
+                            I want the world to see Jesus when they look at me<br><br>
+                            When the world looks at me do they see Jesus?<br>
+                            When the world looks at me what do they see?<br>
+                            Do they see hope? Do they see love? Do they see charity?<br>
+                            When the world looks at me what will they see?<br><br>
+                            When I spoke, did my words contain your wisdom, Lord?<br>
+                            And when I prayed, did my prayers contain Your love?<br>
+                            And did my life reflect the glory of your Spirit?<br>
+                            And did I show the ones around me they were loved?<br><br>
+                            When the world looks at me do they see Jesus?<br>
+                            When the world looks at me what do they see?<br>
+                            Do they see hope? Do they see love? Do they see charity?<br>
+                            When the world looks at me what do they see?<br><br>
+                            When the world looks at you do they see Jesus?<br>
+                            (Do they see Jesus?)<br>
+                            When the world looks at you what do they see?<br>
+                            (What do they see?)<br>
+                            Do they see hope? Love? And charity?<br>
+                            When the world looks at me what do they see?<br>
+                            And, Lord, when the world looks at me what do they see?<br>
+                        </p>
+                    </div>
+                    <div class="tab-pane fade" id="v-pills-20" role="tabpanel" aria-labelledby="v-pills-20-tab">
+                        <video controls autoplay>
+                            <source class="song_Vid" src="../videos/Broken Vessels.webm" type="video/mp4">
+                        </video>
+                        <br>
+                        <h3>Why Have You Chosen Me?</h3>
+                        <h6>Celestine</h6>
+
+                        <br>
+                        <br>
+                        <p class="text-justify lyrics font-weight-bold">
+                            Why have You chosen me out of millions Your child to be?<br>
+                            You know all the wrong that I've done<br>
+                            O, how could You pardon me, forgive my iniquity<br>
+                            To save me, give Jesus Your Son<br><br>
+                            *But Lord, help me be what You want me to be<br>
+                            Your Word I will strive to obey<br>
+                            My life I now give, for You I will live<br>
+                            And walk by Your side all the <br><br>
+                            I am amazed to know that a God so great could love me so<br>
+                            He's willing and wanting to bless<br>
+                            His grace is so wonderful, His mercy's so bountiful<br>
+                            I can't understand it, I confess<br><BR>
+                            *But Lord, help me be what You want me to be<br>
+                            Your Word I will strive to obey<br>
+                            My life I now give, for You I will live<br>
+                            And walk by Your side all the
+                        </p>
+                    </div>
+                    <div class="tab-pane fade" id="v-pills-21" role="tabpanel" aria-labelledby="v-pills-21-tab">
+                        <video controls autoplay>
+                            <source class="song_Vid" src="../videos/Broken Vessels.webm" type="video/mp4">
+                        </video>
+                        <br>
+                        <h3>Will You Love Jesus More</h3>
+                        <h6>Phillips, Craig and Dean</h6>
+
+                        <br>
+                        <br>
+                        <p class="text-justify lyrics font-weight-bold">
+                            I feel quite sure if I did my best<br>
+                            I could maybe impress you<br>
+                            With tender words and a harmony<br>
+                            A clever rhyme or two<br>
+                            But if all I've done in the time we've shared<br>
+                            Is turn your eyes on me<br>
+                            Then I've failed at what I've been called to do<br>
+                            There's someone else I want you to see
+                            Will you love Jesus more
+                            When we go our different ways
+                            When this moment is a memory
+                            Will you remember His face
+                            Will you look back and realize
+                            You sensed His love more than you did before
+                            I'd pray for nothing less
+                            Than for you to love Jesus more
+                            I'd like to keep these memories
+                            In frames of gold and silver
+                            And reminisce a year from now
+                            About the smiles we've shared
+                            But above all else I hope you will come
+                            To know the Father's love
+                            When you see the Lord face to face
+                            You'll hear Him say "well done"
+                            Will you love Jesus more
+                            When we go our different ways
+                            When this moment is a memory
+                            Will you remember His face
+                            Will you look back and realize
+                            You sensed His love more than you did before
+                            I'd pray for nothing less
+                            Than for you to love Jesus more
+                            I'd pray for nothing less
+                            Than for you to love Jesus more
+                        </p>
+                    </div>
+                    <!--
+                    <div class="tab-pane fade" id="v-pills-21" role="tabpanel" aria-labelledby="v-pills-21-tab">Eu
+                        dolore ea ullamco dolore Lorem id cupidatat excepteur reprehenderit consectetur elit id
+                        dolor
+                        proident in cupidatat officia. Voluptate excepteur commodo labore nisi cillum duis aliqua
+                        do.
+                        Aliqua amet qui mollit consectetur nulla mollit velit aliqua veniam nisi id do Lorem
+                        deserunt
+                        amet.
+                        Culpa ullamco sit adipisicing labore officia magna elit nisi in aute tempor commodo
+                        eiusmod.
+                    </div>
+                    <div class="tab-pane fade" id="v-pills-22" role="tabpanel" aria-labelledby="v-pills-22-tab">Eu
+                        dolore ea ullamco dolore Lorem id cupidatat excepteur reprehenderit consectetur elit id
+                        dolor
+                        proident in cupidatat officia. Voluptate excepteur commodo labore nisi cillum duis aliqua
+                        do.
+                        Aliqua amet qui mollit consectetur nulla mollit velit aliqua veniam nisi id do Lorem
+                        deserunt
+                        amet.
+                        Culpa ullamco sit adipisicing labore officia magna elit nisi in aute tempor commodo
+                        eiusmod.
+                    </div>
+                    <div class="tab-pane fade" id="v-pills-23" role="tabpanel" aria-labelledby="v-pills-23-tab">Eu
+                        dolore ea ullamco dolore Lorem id cupidatat excepteur reprehenderit consectetur elit id
+                        dolor
+                        proident in cupidatat officia. Voluptate excepteur commodo labore nisi cillum duis aliqua
+                        do.
+                        Aliqua amet qui mollit consectetur nulla mollit velit aliqua veniam nisi id do Lorem
+                        deserunt
+                        amet.
+                        Culpa ullamco sit adipisicing labore officia magna elit nisi in aute tempor commodo
+                        eiusmod.
+                    </div>
+                    <div class="tab-pane fade" id="v-pills-24" role="tabpanel" aria-labelledby="v-pills-24-tab">Eu
+                        dolore ea ullamco dolore Lorem id cupidatat excepteur reprehenderit consectetur elit id
+                        dolor
+                        proident in cupidatat officia. Voluptate excepteur commodo labore nisi cillum duis aliqua
+                        do.
+                        Aliqua amet qui mollit consectetur nulla mollit velit aliqua veniam nisi id do Lorem
+                        deserunt
+                        amet.
+                        Culpa ullamco sit adipisicing labore officia magna elit nisi in aute tempor commodo
+                        eiusmod.
+                    </div>
+                    <div class="tab-pane fade" id="v-pills-25" role="tabpanel" aria-labelledby="v-pills-25-tab">Eu
+                        dolore ea ullamco dolore Lorem id cupidatat excepteur reprehenderit consectetur elit id
+                        dolor
+                        proident in cupidatat officia. Voluptate excepteur commodo labore nisi cillum duis aliqua
+                        do.
+                        Aliqua amet qui mollit consectetur nulla mollit velit aliqua veniam nisi id do Lorem
+                        deserunt
+                        amet.
+                        Culpa ullamco sit adipisicing labore officia magna elit nisi in aute tempor commodo
+                        eiusmod.
+                    </div>
+                    -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container suggestedVid">
+        <section>
+            <div class="container">
+                <br>
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <hr class="breaker">
+                        </div>
+                        <div class="col-auto">
+                            <h4 class="txt">𝐒𝐔𝐆𝐆𝐄𝐒𝐓𝐄𝐃 𝐒𝐎𝐍𝐆 𝐕𝐈𝐃𝐄𝐎𝐒</h4>
+                        </div>
+                        <div class="col">
+                            <hr class="breaker">
+                        </div>
+                    </div>
+                </div>
+
+                <br>
+
+                <div class="row">
+
+                    <div class="col-lg-3 col-md-6 mt-md-3 d-flex">
+                        <div class="item-card d-flex">
+                            <div class="body">
+                                <div class="card-title suggested_bg"><a href="https://www.youtube.com/watch?v=Rg2a5-XtqHE">
+
+                                        <img src="../images/plan.jpg" class="suggestedPic">
+                                    </a>
+                                </div>
+                                <div class="body-text text-primary text-center font-weight-bold"><a href="https://www.youtube.com/watch?v=Rg2a5-XtqHE">When
+                                        God
+                                        has another Plan</a></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 mt-md-3 d-flex">
+                        <div class="item-card d-flex">
+                            <div class="body">
+                                <div class="card-title suggested_bg">
+                                    <a href="https://www.youtube.com/watch?v=SUBiATv0D9w">
+                                        <img src="../images/yes.jpg" class="suggestedPic">
+                                    </a>
+                                </div>
+                                <div class="body-text text-primary text-center font-weight-bold"><a href="https://www.youtube.com/watch?v=SUBiATv0D9w">Yes,
+                                        I
+                                        believe</a></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 mt-md-3 d-flex">
+                        <div class="item-card d-flex">
+                            <div class="body">
+                                <div class="card-title suggested_bg">
+                                    <a href="https://www.youtube.com/watch?v=e33VBBkuZ6A">
+                                        <img src="../images/bury.jpg" class="suggestedPic">
+                                    </a>
+                                </div>
+                                <div class="body-text text-primary text-center font-weight-bold"><a href="https://www.youtube.com/watch?v=e33VBBkuZ6A">Bury
+                                        my
+                                        Heart</a></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 mt-md-3 d-flex">
+                        <div class="item-card d-flex">
+                            <div class="body">
+                                <div class="card-title suggested_bg">
+                                    <a href="https://www.youtube.com/watch?v=QCGk6jsuVpk">
+                                        <img src="../images/gave.jpg" class="suggestedPic"> </a>
+                                </div>
+                                <div class="body-text text-primary text-center font-weight-bold"><a href="https://www.youtube.com/watch?v=QCGk6jsuVpk">He
+                                        Gave
+                                        Himself</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+            </div>
+        </section>
+    </div>
+
+    <br>
+
+
+    <div class="jumbotron jumbotron-fluid footer">
+        <div class="row">
+            <div class="col-sm-2"></div>
+            <div class="col-sm-8 text-center">
+                <h1 class=" text-light">Want to be blessed with our daily devotion?</h1>
+                <h3 class=" text-light">You can recieve our daily email now!</h3>
+
+                <br>
+                <br>
+
+                <button type="button" class="btn btn-primary sign_up" data-toggle="modal" data-target="#myModal">
+                    Sign Up to Register
+                </button>
+
+                <div class="modal fade" id="myModal">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+
+                            <div class="modal-header">
+                                <h4 class="modal-title">Sign Up</h4>
+                                <hr>
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            </div>
+
+                            <div class="modal-body">
+                                <form>
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="Name">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="Email">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="Password">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="Confirm Password">
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-2"></div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <div class="footerFollow ">
+            <center>
+                <br>
+
+
+                <h5 class="text-white">Follow Us On
+                    <br>
+                    <br>
+                    <a href="#" class="fa fa-facebook "></a>
+                    <a href="#" class="fa fa-twitter"></a>
+                    <a href="#" class="fa fa-google"></a>
+                    <a href="#" class="fa fa-linkedin"></a>
+                    <a href="#" class="fa fa-youtube"></a>
+                    <a href="#" class="fa fa-instagram"></a>
+                </h5>
+
+                <p class="text-white">Copyright 2019. All Rights Reserved. Reproduction in whole or
+                    in part without permission is prohibited.
+                </p>
+                <br>
+            </center>
+        </div>
+    </div>
+
+</body>
+
+</html>

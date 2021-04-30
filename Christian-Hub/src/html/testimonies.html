@@ -1,0 +1,823 @@
+<!Doctype <!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Christianity Hub</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" media="screen" href="../src/css/style.css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+
+
+<style>
+  body, html {
+	margin: 0;
+	font-family: Roboto, Arial, helvetica, sans-serif;
+}
+
+a {
+	outline: none;
+}
+
+.navbar-container {
+	text-align: center;
+	background-color: #009688;
+	box-shadow: 0px -20px 5px 20px #333333;
+	padding: 10px;
+	font-size: 0;
+}
+
+.navbar-container ul {
+	margin: 0;
+	padding: 0;
+	text-align: right;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.navbar-container ul li {
+	display: inline-block;
+	font-size: 16px;
+}
+
+.navbar-container ul li a {
+	color: #ffffff;
+	text-decoration: none;
+	display: inline-block;	
+	padding: 10px;
+	transition: color 0.5s;
+}
+
+.navbar-container ul li .underline {
+	height: 3px;
+	background-color: transparent;
+	width: 0%;
+	transition: width 0.2s, background-color 0.5s;
+	margin: 0 auto;
+}
+
+.navbar-container ul li.active-link .underline {
+	width: 100%;
+	background-color: white;
+}
+
+.navbar-container ul li:hover .underline {
+	background-color: white;
+	width: 100%;
+}
+
+
+.navbar-container ul li:active a {
+	transition: none;
+	color: rgba(255,255,255,0.76);
+}
+
+.navbar-container ul li:active .underline {
+	transition: none;
+	background-color: rgba(255,255,255,0.76);
+}
+
+  .line {
+
+    border-left: 6px solid gray;
+    height: 500px
+  }
+
+  .vod_image {
+    background-image: url("../src/images/head..jpg");
+    padding:10 10 10 10px;
+    border-radius: 4%;
+  }
+
+  .input[type=text] {
+    width: 130px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-image: url('searchicon.png');
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+  }
+
+  .input[type=text]:focus {
+    width: 60%;
+  }
+
+
+
+  .footer {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.10), rgba(0, 0, 0, 0.5)), url("../src/images/footer_img.jpg");
+    height: 65%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+
+  .cards {
+    background-image: url(../src/images/head..jpg)
+  }
+
+  .card-header {
+    background-image: url(../src/images/head..jpg)
+  }
+
+  .card-body {
+    background-image: url(../src/images/head..jpg)
+  }
+
+  .card-header .fa {
+    padding: 10px;
+    font-size: 40px;
+    width: 60px;
+    height: 60px;
+    margin: 5px 5px;
+    border-radius: 50%;
+    text-decoration: none;
+  }
+
+
+  .card-header .fa:hover {
+    color: BLACK;
+  }
+
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+    font-size: 40px;
+  }
+
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+    text-decoration: none;
+  }
+
+  .fa-google {
+    background: #dd4b39;
+    color: white;
+  }
+
+  .fa-linkedin {
+    background: #007bb5;
+    color: white;
+  }
+
+  .fa-youtube {
+    background: #bb0000;
+    color: white;
+  }
+
+  .fa-instagram {
+    background: #125688;
+    color: white;
+  }
+
+  .breaker {
+    border: 1px solid black;
+  }
+
+
+  .vid {
+    height: 60px;
+    width: 70px;
+    background-color: orangered;
+    padding: 10 7 0 7px;
+    border-radius: 15px;
+
+  }
+
+  .fa-play {
+    color: white;
+    font-size: 35px;
+    text-align: center;
+
+  }
+
+  .imgs {
+    float: right;
+  }
+
+  .footer1 {
+    background-color: rgb(27, 26, 26);
+    height: 130px;
+  }
+
+  .card {
+    background-color: rgb(27, 26, 26);
+  }
+
+  .card-header {
+
+    color: rgb(27, 26, 26);
+  }
+
+
+  .img-responsive {
+    height: 300px;
+    width: 300px;
+  }
+
+  .hovereffect {
+    width: 100%;
+    height: 100%;
+    float: left;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    cursor: default;
+  }
+
+  .hovereffect .overlay {
+    position: absolute;
+    overflow: hidden;
+    width: 80%;
+    height: 80%;
+    left: 2%;
+    top: 10%;
+    border-bottom: 2px solid #FFF;
+    border-top: 2px solid #FFF;
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+    -webkit-transform: scale(0, 1);
+    -ms-transform: scale(0, 1);
+    transform: scale(0, 1);
+  }
+
+  .hovereffect:hover .overlay {
+    opacity: 1;
+    filter: alpha(opacity=100);
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+  }
+
+  .hovereffect img {
+    display: block;
+    position: relative;
+    -webkit-transition: all 0.35s;
+    transition: all 0.35s;
+  }
+
+  .hovereffect:hover img {
+    filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="linear" slope="0.6" /><feFuncG type="linear" slope="0.6" /><feFuncB type="linear" slope="0.6" /></feComponentTransfer></filter></svg>#filter');
+    filter: brightness(0.6);
+    -webkit-filter: brightness(0.6);
+  }
+
+  .hovereffect h2 {
+    text-transform: uppercase;
+    text-align: center;
+    position: relative;
+    font-size: 17px;
+    background-color: transparent;
+    color: #FFF;
+    padding: 1em 0;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+
+  .hovereffect a,
+  .hovereffect p {
+    color: #FFF;
+    padding: 1em 0;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+
+  .hovereffect:hover a,
+  .hovereffect:hover p,
+  .hovereffect:hover h2 {
+    opacity: 1;
+    filter: alpha(opacity=100);
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+
+
+  .story1 {
+    width: 250px;
+    height: 250px;
+  }
+
+
+
+  .f_article {
+    padding: 15px;
+  }
+
+  .txt:hover {
+    text-decoration: underline;
+    color: red;
+  }
+
+.btn:hover {
+  color:black;
+  opacity: 0.8 !important;
+}
+
+
+.item-card {
+  border-radius: 5px;
+}
+
+.card-title {
+  height: 200px;
+  padding: 8px;
+  border-radius: 5px 5px 0 0;
+  color: #fff;
+  text-align: center;
+}
+
+
+.body-text:hover {
+    text-decoration: underline;
+    color:red;
+  }
+  
+.body-text {
+  padding:10px;
+  font-size: 20px;
+}
+
+/* colors  */
+
+.article_bg {
+  background-image: url("../src/images/head..jpg")
+
+}
+
+.articlePic {
+    width: 100%;
+    height:100%;
+   
+  }  
+</style>
+
+<script>
+  $('.nav-link').on('click', function () {
+    $('.active-link').removeClass('active-link');
+    $(this).addClass('active-link');
+  });
+</script>
+
+<body>
+  <div class="navbar-container">
+    <ul>
+      <li class="nav-link active-link">
+        <a  href="../../public/page.php">Home
+        </a>
+        <div class="underline"></div>
+      </li>
+      <li class="nav-link">
+        <a href="bible.html">Bible</a>
+        <div class="underline"></div>
+      </li>
+      <li class="nav-link">
+        <a href="songs.html">Songs</a>
+        <div class="underline"></div>
+      </li>
+      <li class="nav-link">
+        <a href="#">Bible trivia</a>
+        <div class="underline"></div>
+      </li>
+      <li class="nav-link">
+        <a href="about.html">About Us</a>
+        <div class="underline"></div>
+      </li>
+      <li class="nav-item dropdown margin">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">THOUGHTS</a>
+        <div class="underline"></div>
+
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="prayer.hmtl">Prayer</a>
+          <div class="underline"></div>
+
+          <div class="dropdown-divider">
+          </div>
+          <a class="dropdown-item" href="testimonies.html"> Testimonies </a>
+          <div class="underline"></div>
+
+        </div>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2 input" type="text" name="search" placeholder="Search..">
+      <button class="btn btn-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+
+    </ul>
+  </div>
+
+  <div class="jumbotron ml-100 mr-100">
+    <div class="row">
+      <div class="col-lg-3 border-right ">
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <hr class="breaker">
+            </div>
+            <div class="col-auto">
+              <h4 class="txt">Related Videos</h4>
+            </div>
+            <div class="col">
+              <hr class="breaker">
+            </div>
+          </div>
+        </div>
+        <br>
+        <br>
+
+        <br>
+        <div class="row">
+          <div class="col-sm-3">
+            <a href="https://www.youtube.com/watch?v=KGlx11BxF24" class="fa fa-play vid"></a>
+          </div>
+          <div class="col-sm-9 text-center">
+            <a href=https://www.youtube.com/watch?v=KGlx11BxF24> <h4>Broken Plates...RAVEN GWAPA</h4>
+            </a>
+          </div>
+        </div>
+        <hr class="breaker">
+        <div class="row">
+          <div class="col-sm-3">
+            <a href="#" class="fa fa-play vid"></a>
+          </div>
+          <div class="col-sm-9 text-center">
+            <a href=https://www.youtube.com/watch?v=KGlx11BxF24> <h4>Broken Plates...RAVEN GWAPA</h4>
+            </a>
+          </div>
+        </div>
+        <hr class="breaker">
+        <div class="row">
+          <div class="col-sm-3">
+            <a href="#" class="fa fa-play vid"></a>
+          </div>
+          <div class="col-sm-9 text-center">
+            <a href=https://www.youtube.com/watch?v=KGlx11BxF24> <h4>Broken Plates...RAVEN GWAPA</h4>
+            </a>
+          </div>
+        </div>
+        <hr class="breaker">
+        <div class="row">
+          <div class="col-sm-3">
+            <a href="#" class="fa fa-play vid"></a>
+          </div>
+          <div class="col-sm-9 text-center">
+            <a href=https://www.youtube.com/watch?v=KGlx11BxF24> <h4>Broken Plates...RAVEN GWAPA</h4>
+            </a>
+          </div>
+        </div>
+        <hr class="breaker">
+        <div class="row">
+          <div class="col-sm-3">
+            <a href="#" class="fa fa-play vid"></a>
+          </div>
+          <div class="col-sm-9 text-center">
+            <a href=https://www.youtube.com/watch?v=KGlx11BxF24> <h4>Broken Plates...RAVEN GWAPA</h4>
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="col-lg-9">
+        <div class="container">
+          <div class="row">
+            <div class="col"></div>
+            <div class="col">
+              <hr class="breaker">
+            </div>
+            <div class="col-auto">
+              <h4 class="txt">Inspiring Bible Verses</h4>
+            </div>
+            <div class="col">
+              <hr class="breaker">
+            </div>
+            <div class="col"></div>
+          </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-4">
+              <div class="hovereffect">
+                <img class="img-responsive" src="../src/images/love1.jfif" alt="">
+                <div class="overlay">
+                  <br>
+                  <br>
+
+                  <h2>LOVE</h2>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-4">
+              <div class="hovereffect">
+                <img class="img-responsive" src="../src/images/hope.jfif" alt="">
+                <div class="overlay">
+                  <br>
+                  <br>
+
+                  <h2>HOPE</h2>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="hovereffect">
+                <img class="img-responsive" src="../src/images/1.jfif" alt="">
+                <div class="overlay">
+                  <br>
+                  <br>
+
+                  <h2>Effect 13</h2>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <br>
+          <br>
+
+          <div class="row">
+            <div class="col-sm-4">
+              <div class="hovereffect">
+                <img class="img-responsive" src="../src/images/1.jfif" alt="">
+                <div class="overlay">
+                  <br>
+                  <br>
+
+                  <h2>Effect 13</h2>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="hovereffect">
+                <img class="img-responsive" src="../src/images/1.jfif" alt="">
+                <div class="overlay">
+                  <br>
+                  <br>
+
+                  <h2>Effect 13</h2>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="hovereffect">
+                <img class="img-responsive" src="../src/images/1.jfif" alt="">
+                <div class="overlay">
+                  <br>
+                  <br>
+
+                  <h2>Effect 13</h2>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+</body>
+
+<div class="jumbotron jumbotron-fluid header">
+</div>
+
+<div class="row">
+  <div class="col-sm-4" id="left">
+    <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+      <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home"
+        aria-selected="true">Home</a>
+      <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile"
+        aria-selected="false">Profile</a>
+      <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab"
+        aria-controls="v-pills-messages" aria-selected="false">Messages</a>
+      <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab"
+        aria-controls="v-pills-settings" aria-selected="false">Settings</a>
+      <h4>Fundraising</h4>
+      <h4>Accounting</h4>
+      <h4>Design</h4>
+      <h4>Engineering</h4>
+      <h4>Hiring &amp; Culture</h4>
+      <h4>Managing &amp; Operating</h4>
+      <h4>Legal</h4>
+      <h4>PR &amp; Marketing</h4>
+      <h4>Sales &amp; BD</h4>
+      <h4>PR &amp; Marketing</h4>
+      <h4>Sales &amp; BD</h4>
+      <h4>Sales &amp; BD</h4>
+      <h4>Sales &amp; BD</h4>
+      <h4>Sales &amp; BD</h4>
+      <h4>Sales &amp; BD</h4>
+      <h4>Sales &amp; BD</h4>
+      <h4>Sales &amp; BD</h4>
+    </div>
+  </div>
+  <div class="container">
+    <div class="col-sm-8" id="right">
+      <div class="tab-content" id="v-pills-tabContent">
+        <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">Eu
+          dolore ea ullamco dolore Lorem id cupidatat excepteur reprehenderit consectetur elit id dolor
+          proident in cupidatat officia. Voluptate excepteur commodo labore nisi cillum duis aliqua do.
+          Aliqua amet qui mollit consectetur nulla mollit velit aliqua veniam nisi id do Lorem deserunt
+          amet.
+          Culpa ullamco sit adipisicing labore officia magna elit nisi in aute tempor commodo eiusmod.</div>
+        <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">Eu
+          dolore ea ullamco dolore Lorem id cupidatat excepteur reprehenderit consectetur elit id dolor
+          proident in cupidatat officia. Voluptate excepteur commodo labore nisi cillum duis aliqua do.
+          Aliqua amet qui mollit consectetur nulla mollit velit aliqua veniam nisi id do Lorem deserunt
+          amet.
+          Culpa ullamco sit adipisicing labore officia magna elit nisi in aute tempor commodo eiusmod.</div>
+        <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">Eu
+          dolore ea ullamco dolore Lorem id cupidatat excepteur reprehenderit consectetur elit id dolor
+          proident in cupidatat officia. Voluptate excepteur commodo labore nisi cillum duis aliqua do.
+          Aliqua amet qui mollit consectetur nulla mollit velit aliqua veniam nisi id do Lorem deserunt
+          amet.
+          Culpa ullamco sit adipisicing labore officia magna elit nisi in aute tempor commodo eiusmod.</div>
+        <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">Eu
+          dolore ea ullamco dolore Lorem id cupidatat excepteur reprehenderit consectetur elit id dolor
+          proident in cupidatat officia. Voluptate excepteur commodo labore nisi cillum duis aliqua do.
+          Aliqua amet qui mollit consectetur nulla mollit velit aliqua veniam nisi id do Lorem deserunt
+          amet.
+          Culpa ullamco sit adipisicing labore officia magna elit nisi in aute tempor commodo eiusmod.</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+.scrollable{
+margin:0%;
+overflow: hidden;
+height:100%;
+}
+
+@media (min-width: 768px){
+#left {
+
+position:absolute;
+top:100px;
+bottom: 0;
+left: 2px;
+right:2px;
+width: 100%;
+overflow-y: scroll;
+}
+
+
+#right {
+position:absolute;
+top:100px;
+bottom: 0;
+right: 2px;
+width: 100%;
+}
+}
+
+#left {
+background-color: wheat;
+text-align: center;
+height:100%;
+}
+
+
+#right {
+height:100%;
+background-color: white;
+text-align: center;
+}
+
+h4{
+padding: 10px 0;
+}
+
+.tool-card{
+border: 2px solid black;
+padding: 10px 10px;
+margin: 10px 0;
+}
+
+<div class="container">
+  <div class="col-sm-5 right">
+
+  </div>
+</div>
+
+<head>
+  <title>Christianity Hub</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+
+<div class="container">
+  <div data-gb-widget="search" data-placeholder="Search for the Bible Passage"></div>
+  <div data-gb-widget="passage" data-passage="JAS.4.5"></div>
+
+</div>
+
+
+
+<h2> 𝐆𝐞𝐧𝐞𝐬𝐢𝐬 𝟐 King James Version (KJV)</h2>
+<br>
+<h5>
+  1Thus the heavens and the earth were finished, and all the host of them.
+  <br><br>
+  2 And on the seventh day God ended his work which he had made; and he rested on the seventh
+  day from all his work which he had made.
+  <br><br>
+  3 And God blessed the seventh day, and sanctified it: because that in it he had rested from
+  all his work which God created and made.
+  <br><br>
+  4 These are the generations of the heavens and of the earth when they were created, in the
+  day that the Lord God made the earth and the heavens,
+  <br><br>
+  5 And every plant of the field before it was in the earth, and every herb of the field
+  before it grew: for the Lord God had not caused it to rain upon the earth, and there was
+  not a man to till the ground.
+  <br><br>
+  6 But there went up a mist from the earth, and watered the whole face of the ground.
+  <br><br>
+  7 And the Lord God formed man of the dust of the ground, and breathed into his nostrils the
+  breath of life; and man became a living soul.
+  <br><br>
+  8 And the Lord God planted a garden eastward in Eden; and there he put the man whom he had
+  formed.
+  <br><br>
+  9 And out of the ground made the Lord God to grow every tree that is pleasant to the sight,
+  and good for food; the tree of life also in the midst of the garden, and the tree of
+  knowledge of good and evil.
+  <br><br>
+  10 And a river went out of Eden to water the garden; and from thence it was parted, and
+  became into four heads.
+  <br><br>
+  11 The name of the first is Pison: that is it which compasseth the whole land of Havilah,
+  where there is gold;
+  <br><br>
+  12 And the gold of that land is good: there is bdellium and the onyx stone.
+
+  13 And the name of the second river is Gihon: the same is it that compasseth the whole land
+  of Ethiopia.
+  <br><br>
+  14 And the name of the third river is Hiddekel: that is it which goeth toward the east of
+  Assyria. And the fourth river is Euphrates.
+  <br><br>
+  15 And the Lord God took the man, and put him into the garden of Eden to dress it and to
+  keep it.
+  <br><br>
+  16 And the Lord God commanded the man, saying, Of every tree of the garden thou mayest
+  freely eat:
+  <br><br>
+  17 But of the tree of the knowledge of good and evil, thou shalt not eat of it: for in the
+  day that thou eatest thereof thou shalt surely die.
+  <br><br>
+  18 And the Lord God said, It is not good that the man should be alone; I will make him an
+  help meet for him.
+  <br><br>
+  19 And out of the ground the Lord God formed every beast of the field, and every fowl of
+  the air; and brought them unto Adam to see what he would call them: and whatsoever Adam
+  called every living creature, that was the name thereof.
+  <br><br>
+  20 And Adam gave names to all cattle, and to the fowl of the air, and to every beast of the
+  field; but for Adam there was not found an help meet for him.
+  <br><br>
+  21 And the Lord God caused a deep sleep to fall upon Adam, and he slept: and he took one of
+  his ribs, and closed up the flesh instead thereof;
+  <br><br>
+  22 And the rib, which the Lord God had taken from man, made he a woman, and brought her
+  unto the man.
+  <br><br>
+  23 And Adam said, This is now bone of my bones, and flesh of my flesh: she shall be called
+  Woman, because she was taken out of Man.
+  <br><br>
+  24 Therefore shall a man leave his father and his mother, and shall cleave unto his wife:
+  and they shall be one flesh.
+  <br><br>
+  25 And they were both naked, the man and his wife, and were not ashamed.
+</h5>
